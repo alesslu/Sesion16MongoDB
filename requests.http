@@ -1,0 +1,36 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nomb_cliente":"Cristina Mendez",
+    "telefono":78925661790,
+    "ciudad":"Veracruz",
+    "calle":"San Juan",
+    "numero":1770,
+    "estado":"Veracruz",
+    "fecha_nacimiento":"31/11/1990"
+}
+
+###
+
+GET http://localhost:9000/api/users HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/users/639bc25a8f79a92a9313b93c HTTP/1.1
+
+
+###
+PUT http://localhost:9000/api/users/639bc25a8f79a92a9313b93c HTTP/1.1
+Content-Type: application/json
+
+{
+  "nomb_cliente": "Juliana Torres",
+  "telefono": 8892651780,
+  "ciudad": "Guadalajara",
+  "calle": "Girasoles",
+  "numero": 1180,
+  "estado": "Jalisco",
+  "fecha_nacimiento": "27/12/2000",
+}
