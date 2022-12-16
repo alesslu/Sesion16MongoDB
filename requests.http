@@ -3,13 +3,13 @@ POST http://localhost:9000/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "nomb_cliente":"Cristina Mendez",
-    "telefono":78925661790,
-    "ciudad":"Veracruz",
+    "nomb_cliente":"Raul Fernandez",
+    "telefono":78925661820,
+    "ciudad":"DF",
     "calle":"San Juan",
     "numero":1770,
-    "estado":"Veracruz",
-    "fecha_nacimiento":"31/11/1990"
+    "estado":"DF",
+    "fecha_nacimiento":"28/10/1985"
 }
 
 ###
@@ -32,5 +32,9 @@ Content-Type: application/json
   "calle": "Girasoles",
   "numero": 1180,
   "estado": "Jalisco",
-  "fecha_nacimiento": "27/12/2000",
+  "fecha_nacimiento": "27/12/2000"
 }
+
+
+###
+DELETE http://localhost:9000/api/users/639cddd91a1cdb580620ef18 HTTP/1.1
