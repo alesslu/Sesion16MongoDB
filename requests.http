@@ -3,13 +3,10 @@ POST http://localhost:9000/api/users HTTP/1.1
 Content-Type: application/json
 
 {
-    "nomb_cliente":"Raul Fernandez",
-    "telefono":78925661820,
-    "ciudad":"DF",
-    "calle":"San Juan",
-    "numero":1770,
-    "estado":"DF",
-    "fecha_nacimiento":"28/10/1985"
+    "nombre":"Karla torres",
+    "correo":"karla@gmail.com",
+    "username":"karlato",
+    "contraseña":"123456789"
 }
 
 ###
@@ -22,19 +19,16 @@ GET http://localhost:9000/api/users/639bc25a8f79a92a9313b93c HTTP/1.1
 
 
 ###
-PUT http://localhost:9000/api/users/639bc25a8f79a92a9313b93c HTTP/1.1
+PUT http://localhost:9000/api/users/63a0f0dcc64c73bb88dacd8a HTTP/1.1
 Content-Type: application/json
 
 {
-  "nomb_cliente": "Juliana Torres",
-  "telefono": 8892651780,
-  "ciudad": "Guadalajara",
-  "calle": "Girasoles",
-  "numero": 1180,
-  "estado": "Jalisco",
-  "fecha_nacimiento": "27/12/2000"
+    "nombre":"Karla torres",
+    "correo":"karla@gmail.com",
+    "username":"karlatorres",
+    "contraseña":"123456789"
 }
 
 
 ###
-DELETE http://localhost:9000/api/users/639cddd91a1cdb580620ef18 HTTP/1.1
+DELETE http://localhost:9000/api/users/639bc01f649b9bb8a9d4e1ae HTTP/1.1

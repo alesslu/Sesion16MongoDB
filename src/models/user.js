@@ -1,32 +1,20 @@
 const mongoose = require("mongoose");
 
 const userSchema= mongoose.Schema({
-    nomb_cliente:{
+    nombre:{
         type: String,
         require:true
     },
-    telefono:{
-        type: Number,
+    correo:{
+        type: String,
         require:true
     },
-    ciudad:{
+    username:{
         type: String,
         require: true
     },
-    calle:{
+    contraseña:{
         type: String,
-        require: true
-    },
-    numero:{
-        type: Number,
-        require: true
-    },
-    estado:{
-        type:String,
-        require: true
-    },
-    fecha_nacimiento:{
-        type:String,
         require: true
     }
 });
